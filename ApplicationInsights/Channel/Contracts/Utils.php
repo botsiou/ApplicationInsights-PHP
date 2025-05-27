@@ -38,7 +38,9 @@ class Utils
         {
         	if (is_object($dataItem) && method_exists($dataItem, 'jsonSerialize') == true)
             {
-                $queueToEncode[$key] = Utils::getUnderlyingData($dataItem->jsonSerialize());
+                $serializedDataItem =$dataItem->jsonSerialize();
+                if (is_array($serializedDataItem)) $queueToEncode[$key] = Utils::getUnderlyingData($serializedDataItem);
+                else if (is_string($serializedDataItem)) $queueToEncode[$key] = $dataItem;
             }
             else if (is_array($dataItem))
             {
