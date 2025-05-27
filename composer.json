@@ -1,5 +1,5 @@
 {
-  "name": "mondago/application-insights",
+  "name": "botsiou/application-insights",
   "description": "This project extends the Application Insights API surface to support PHP.",
   "type": "library",
   "keywords": [
@@ -9,7 +9,7 @@
     "insights",
     "monitoring"
   ],
-  "homepage": "https://github.com/mondago/ApplicationInsights-PHP",
+  "homepage": "https://github.com/botsiou/ApplicationInsights-PHP",
   "license": "MIT",
   "require": {
     "php": "^7.3|^8.0",
